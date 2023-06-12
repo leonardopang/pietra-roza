@@ -8,9 +8,6 @@ $args_menu_mobile = array(
   'theme_localtion' => 'mobile'
 );
 
-$api_theme = get_option('api_dp8_theme_option');
-
-$logo_desktop = $api_theme['api_theme_logo'];
 
 ?>
 <!DOCTYPE html>
@@ -22,16 +19,21 @@ $logo_desktop = $api_theme['api_theme_logo'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php wp_head() ?>
 </head>
+<?php
+
+$orangeHeader = is_home() ? 'header-orange' : 'header-white';
+
+?>
 
 <body <?php body_class('dp8_theme') ?>>
   <?php wp_body_open() ?>
-  <header class="header js-animaion">
+  <header class="header <?= $orangeHeader ?> js-animaion">
     <div class="header-middle">
       <div class="container-wrap">
         <div class="header-middle_container">
           <div class="header-logo logo-container">
             <a href="<?= site_url() ?>">
-              <img src="<?= $logo_desktop ?>" alt="<?= get_bloginfo('name') ?>">
+              <img src="<?= site_url() ?>/wp-content/uploads/logo-white.png" alt="">
             </a>
           </div>
           <div class="header-menu">
@@ -53,8 +55,4 @@ $logo_desktop = $api_theme['api_theme_logo'];
       </div>
     </nav>
   </header>
-  <?php
-  global $post;
-  $post_slug = $post->post_name;
-  ?>
-  <main class="main-page-<?= $post_slug ?>">
+  <main>
