@@ -1,0 +1,17 @@
+.redes-sociais-footer {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  a {
+    img {
+      transition: transform .5s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+}

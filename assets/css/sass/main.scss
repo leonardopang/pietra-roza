@@ -1,0 +1,37 @@
+@import './abstracts/variables';
+
+@import './base/reset',
+'./base/container',
+'./base/typhography';
+
+@import './components/form',
+'./components/form-placeholder',
+'./components/skeleton',
+'./components/button',
+'./components/title-container';
+
+@import './vendor/tinyslider.scss';
+
+@import './layout/grid',
+'./layout/header',
+'./layout/menu',
+'./layout/menu-desk',
+'./layout/menu-mobile',
+'./layout/menu-footer',
+'./layout/footer',
+'./layout/widget-social',
+'./layout/form-contact',
+'./layout/arrow-top',
+'./layout/calling',
+'./layout/about-card',
+'./layout/calling-contact',
+'./layout/others-services',
+'./layout/plans',
+'./layout/want-participate',
+'./layout/redes-sociais-footer';
+
+
+@import './pages/home/hero-header',
+'./pages/home/two-columns';
+
+@import './pages/home';

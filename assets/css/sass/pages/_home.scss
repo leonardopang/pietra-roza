@@ -1,0 +1,9 @@
+.section-content {
+  margin-top: 4rem;
+}
+
+@media(min-width: $media-query-notebook) {
+  .section-content {
+    margin-top: 14.375rem;
+  }
+}

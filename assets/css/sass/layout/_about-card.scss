@@ -1,0 +1,133 @@
+.about-card {
+  margin-top: 4rem;
+}
+
+.about-card_container {
+
+  .title-container {
+    margin-bottom: 4rem;
+    text-align: center;
+
+    h2 {
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: $Off-black;
+    }
+  }
+}
+
+.about-card_holder {
+  gap: 4rem;
+}
+
+.about-card--item {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 32px;
+  background-color: $Off-white;
+
+  .card-header {
+    background-color: #0C2B07;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 32px 32px 0 0;
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .card-content {
+    padding: 2rem;
+
+    .card-nome {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: $Off-black;
+      margin-bottom: 4px;
+    }
+
+    .card-formacao {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+      color: $Grayscale-body;
+      letter-spacing: 0.75px;
+    }
+
+    .text-container {
+      margin-top: 1rem;
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+        color: $Grayscale-body;
+      }
+    }
+
+    .button-container {
+      margin-top: 2rem;
+
+      .button-card {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        border-color: $Grayscale-line;
+        border-color: $Grayscale-body;
+        color: $Grayscale-body;
+        font-size: 18px;
+        line-height: 32px;
+        gap: 1rem;
+
+        svg {
+          transform: translateY(3px);
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: $media-query-notebook) {
+
+  .about-card_container {
+    .title-container {
+      margin-bottom: 5rem;
+
+      h2 {
+        font-size: 56px;
+        line-height: 72px;
+      }
+    }
+  }
+
+  .about-card--item {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    background-color: $Off-white;
+
+    .card-header {
+      height: 250px;
+
+      img {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .card-content {
+      .card-nome {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+  }
+
+}

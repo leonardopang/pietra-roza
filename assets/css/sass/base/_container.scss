@@ -1,0 +1,31 @@
+.container-wrap {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+@media(min-width: $media-query-tablet) {
+  .container-wrap {
+    width: $container-tablet;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media(min-width: $media-query-notebook) {
+  .container-wrap {
+    width: $container-notebook;
+  }
+}
+
+@media(min-width: $media-query-desktop ) {
+  .container-wrap {
+    width: $container-desktop;
+  }
+}
+
+@media(min-width: $media-query-desktop-lg ) {
+  .container-wrap {
+    width: $container-desktop-lg;
+  }
+}
