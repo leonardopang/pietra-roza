@@ -12,105 +12,104 @@ $container-notebook: 960px;
 $container-tablet: 720px;
 $container-mobile: 540px;
 
+$MainFont: "Poppins", sans-serif;
+$pathSVG: "../../assets/images/svg/";
 
-$MainFont: 'Roboto', sans-serif;
-$pathSVG: '../../assets/images/svg/';
-
-$OrangeTheme: #E74429;
+$OrangeTheme: #e74429;
 $white: #fff;
 $black: #000;
 
-$Off-white: #FCFCFC;
-$Off-black: #14142B;
+$Off-white: #fcfcfc;
+$Off-black: #14142b;
 
-$Grayscale-body: #4E4B66;
-$Grayscale-bg: #F7F7FC;
-$Grayscale-input: #EFF0F6;
-$Grayscale-line: #D9DBE9;
-$Grayscale-placeholder: #A0A3BD;
-$Grayscale-label: #6E7191;
+$Grayscale-body: #4e4b66;
+$Grayscale-bg: #f7f7fc;
+$Grayscale-input: #eff0f6;
+$Grayscale-line: #d9dbe9;
+$Grayscale-placeholder: #a0a3bd;
+$Grayscale-label: #6e7191;
 $Grayscale-ash: #262338;
 
-$Primary-bg: #EBECFE;
-$Primary-light: #BFBEFC;
-$Primary-darkmode: #A996FF;
-$Primary-default: #610BEF;
-$Primary-dark: #4700AB;
+$Primary-bg: #ebecfe;
+$Primary-light: #bfbefc;
+$Primary-darkmode: #a996ff;
+$Primary-default: #610bef;
+$Primary-dark: #4700ab;
 
-$Secondary-light: #E3FEFF;
-$Secondary-bg: #8DE9FF;
-$Secondary-default: #005BD4;
-$Secondary-darkmode: #005BD4;
-$Secondary-dark: #005BD4;
+$Secondary-light: #e3feff;
+$Secondary-bg: #8de9ff;
+$Secondary-default: #005bd4;
+$Secondary-darkmode: #005bd4;
+$Secondary-dark: #005bd4;
 
-$Error-light: #E3FEFF;
-$Error-bg: #8DE9FF;
-$Error-default: #005BD4;
-$Error-darkmode: #005BD4;
-$Error-dark: #005BD4;
+$Error-light: #e3feff;
+$Error-bg: #8de9ff;
+$Error-default: #005bd4;
+$Error-darkmode: #005bd4;
+$Error-dark: #005bd4;
 
-$Success-light: #E3FEFF;
-$Success-bg: #8DE9FF;
-$Success-default: #005BD4;
-$Success-darkmode: #005BD4;
-$Success-dark: #005BD4;
+$Success-light: #e3feff;
+$Success-bg: #8de9ff;
+$Success-default: #005bd4;
+$Success-darkmode: #005bd4;
+$Success-dark: #005bd4;
 
-$Warning-light: #E3FEFF;
-$Warning-bg: #8DE9FF;
-$Warning-default: #005BD4;
-$Warning-darkmode: #005BD4;
-$Warning-dark: #005BD4;
+$Warning-light: #e3feff;
+$Warning-bg: #8de9ff;
+$Warning-default: #005bd4;
+$Warning-darkmode: #005bd4;
+$Warning-dark: #005bd4;
 
-$Overlay-light: #E3FEFF;
-$Overlay-bg: #8DE9FF;
-$Overlay-default: #005BD4;
-$Overlay-darkmode: #005BD4;
-$Overlay-dark: #005BD4;
+$Overlay-light: #e3feff;
+$Overlay-bg: #8de9ff;
+$Overlay-default: #005bd4;
+$Overlay-darkmode: #005bd4;
+$Overlay-dark: #005bd4;
 
-$Red-light: #E3FEFF;
-$Red-bg: #8DE9FF;
-$Red-default: #005BD4;
-$Red-darkmode: #005BD4;
-$Red-dark: #005BD4;
+$Red-light: #e3feff;
+$Red-bg: #8de9ff;
+$Red-default: #005bd4;
+$Red-darkmode: #005bd4;
+$Red-dark: #005bd4;
 
-$Orange-light: #E3FEFF;
-$Orange-bg: #8DE9FF;
-$Orange-default: #005BD4;
-$Orange-darkmode: #005BD4;
-$Orange-dark: #005BD4;
+$Orange-light: #e3feff;
+$Orange-bg: #8de9ff;
+$Orange-default: #005bd4;
+$Orange-darkmode: #005bd4;
+$Orange-dark: #005bd4;
 
-$Yellow-light: #E3FEFF;
-$Yellow-bg: #8DE9FF;
-$Yellow-default: #005BD4;
-$Yellow-darkmode: #005BD4;
-$Yellow-dark: #005BD4;
+$Yellow-light: #e3feff;
+$Yellow-bg: #8de9ff;
+$Yellow-default: #005bd4;
+$Yellow-darkmode: #005bd4;
+$Yellow-dark: #005bd4;
 
-$Green-light: #E3FEFF;
-$Green-bg: #8DE9FF;
-$Green-default: #005BD4;
-$Green-darkmode: #005BD4;
-$Green-dark: #005BD4;
+$Green-light: #e3feff;
+$Green-bg: #8de9ff;
+$Green-default: #005bd4;
+$Green-darkmode: #005bd4;
+$Green-dark: #005bd4;
 
-$Teal-light: #E3FEFF;
-$Teal-bg: #8DE9FF;
-$Teal-default: #005BD4;
-$Teal-darkmode: #005BD4;
-$Teal-dark: #005BD4;
+$Teal-light: #e3feff;
+$Teal-bg: #8de9ff;
+$Teal-default: #005bd4;
+$Teal-darkmode: #005bd4;
+$Teal-dark: #005bd4;
 
-$Blue-light: #E3FEFF;
-$Blue-bg: #8DE9FF;
-$Blue-default: #005BD4;
-$Blue-darkmode: #005BD4;
-$Blue-dark: #005BD4;
+$Blue-light: #e3feff;
+$Blue-bg: #8de9ff;
+$Blue-default: #005bd4;
+$Blue-darkmode: #005bd4;
+$Blue-dark: #005bd4;
 
-$Lavendar-light: #E3FEFF;
-$Lavendar-bg: #8DE9FF;
-$Lavendar-default: #005BD4;
-$Lavendar-darkmode: #005BD4;
-$Lavendar-dark: #005BD4;
+$Lavendar-light: #e3feff;
+$Lavendar-bg: #8de9ff;
+$Lavendar-default: #005bd4;
+$Lavendar-darkmode: #005bd4;
+$Lavendar-dark: #005bd4;
 
-$Pink-light: #E3FEFF;
-$Pink-bg: #8DE9FF;
-$Pink-default: #005BD4;
-$Pink-darkmode: #005BD4;
-$Pink-dark: #005BD4;
+$Pink-light: #e3feff;
+$Pink-bg: #8de9ff;
+$Pink-default: #005bd4;
+$Pink-darkmode: #005bd4;
+$Pink-dark: #005bd4;

@@ -4,7 +4,7 @@
     <div class="footer-column grid three_grids">
       <div class="footer-column__item">
         <div class="logo-container">
-          <img src="" alt="">
+          <img src="<?= site_url() ?>/wp-content/uploads/logo-mobile.png" alt="">
         </div>
         <div class="text-container">
           <p>Solicite seu orçamento pelo botão abaixo ou envie um e-mail para contato@email.com.</p>
