@@ -51,6 +51,14 @@ $orangeHeader = is_home() ? 'header-orange' : 'header-white';
     </div>
     <nav class="menu-mobile">
       <div class="container-wrap">
+        <span class="close-menu">
+          X
+        </span>
+        <div class="header-logo logo-container">
+          <a href="<?= site_url() ?>">
+            <img src="<?= site_url() ?>/wp-content/uploads/logo-white.png" alt="">
+          </a>
+        </div>
         <?php wp_nav_menu($args_menu_mobile); ?>
       </div>
     </nav>

@@ -10,32 +10,50 @@
   .bar {
     width: 100%;
     height: 3px;
-    background-color: #3b4a1e;
+    background-color: $white;
   }
 }
 
 .menu-mobile {
   display: none;
-  padding: 0.5rem 0 1rem;
+  padding: .938rem 1.438rem 1rem;
   position: absolute;
-  background: $Off-white;
-  top: 92px;
+  background: $OrangeTheme;
+  top: 0;
   z-index: 9;
+  height: 100%;
 
   &.active {
     display: block;
     width: 100%;
   }
 
+  .logo-container{
+    margin-top: 5.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close-menu{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
   .menu {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-
+    align-items: center;
+    gap: 1.813rem;
+    margin-top: 3.438rem;
     .menu-item {
 
       &.current-menu-item {
-
 
         a {
           font-weight: bolder;
