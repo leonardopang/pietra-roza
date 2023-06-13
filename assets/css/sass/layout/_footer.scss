@@ -1,85 +1,67 @@
 .footer {
-  margin-top: 8rem;
+  padding: 4rem 0 2.813rem;
+  background-color: $OrangeTheme;
+  color: $white;
 }
 
-.footer-top_container {
-  gap: 2rem;
-}
-
-.footer--item {
-  &:first-child {
-    order: 5;
+.footer-column {
+  .logo-container {
+    margin-bottom: 3.188rem;
   }
-
-  .logo_container {
-    display: flex;
+  .text-container {
+    p {
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 28px;
+      color: $white;
+    }
+  }
+  .button-container {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    max-width: 248px;
+    margin-top: 2.325rem;
+    .button {
+      padding: 10px 60px;
+      background-color: $white;
+      color: $OrangeTheme;
+      border-radius: 65px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
-  .redes-sociais_container {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 248px;
-  }
-
-  .title-container {
-    margin-bottom: 13px;
-
-    h5 {
-      color: #14142B;
-      letter-spacing: 0.75px;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 32px;
+  .footer-column__item-adress {
+    a {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      display: flex;
+      flex-direction: column;
+      color: $white;
     }
   }
 }
 
-.footer-bottom {
+.footer-copy {
+  margin-top: 6.5rem;
   text-align: center;
-  padding: 2rem 0 1.625rem;
-
   p {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.25px;
-    color: $Off-black;
-  }
-
-  a {
-    font-weight: bolder;
-    color: $Off-black;
   }
 }
 
-@media(min-width: $media-query-notebook) {
-  .footer-top_container {
-    gap: 4rem;
-    grid-template-columns: 1fr repeat(3, 156px);
+@media (min-width: $media-query-notebook) {
+  .footer {
+    padding-bottom: 0.5rem;
   }
 
-  .footer--item {
-    &:first-child {
-      order: 0;
-    }
-
-    .redes-sociais_container a {
-      transition: transform .5s ease;
-
-      &:hover {
-        transform: scale(0.9);
-      }
+  .footer-column {
+    .button-container {
+      align-items: flex-start;
     }
   }
-
-  .footer-bottom {
-    padding: 4rem 0 1.625rem;
-  }
-
 }
