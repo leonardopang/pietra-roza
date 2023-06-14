@@ -28,11 +28,14 @@
     img {
       height: 30px;
       object-fit: contain;
+      &.logo-mobile {
+        height: 47px;
+      }
     }
   }
 }
 
-@media(min-width: $media-query-notebook) {
+@media (min-width: $media-query-notebook) {
   .header-middle_container {
     .logo-container {
       position: relative;

@@ -20,7 +20,7 @@
           <span>Uberaba-MG</span>
         </a>
       </div>
-      <div class="footer-column__item">
+      <div class="footer-column__item footer-column__item-redes">
         <h5>Redes</h5>
         <div class="social-icon">
           <a href="" target="_blank"></a>

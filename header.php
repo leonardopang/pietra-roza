@@ -33,7 +33,11 @@ $orangeHeader = is_home() ? 'header-orange' : 'header-white';
         <div class="header-middle_container">
           <div class="header-logo logo-container">
             <a href="<?= site_url() ?>">
-              <img src="<?= site_url() ?>/wp-content/uploads/logo-white.png" alt="">
+              <?php if (wp_is_mobile()) : ?>
+                <img src="<?= site_url() ?>/wp-content/uploads/logo-mobile.png" class="logo-mobile" alt="Pietra Roza">
+              <?php else : ?>
+                <img src="<?= site_url() ?>/wp-content/uploads/logo-white.png" alt="Pietra Roza">
+              <?php endif; ?>
             </a>
           </div>
           <div class="header-menu">

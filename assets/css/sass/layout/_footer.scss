@@ -2,6 +2,7 @@
   padding: 4rem 0 2.813rem;
   background-color: $OrangeTheme;
   color: $white;
+  font-family: "Abel";
 }
 
 .footer-column {
@@ -15,6 +16,7 @@
       font-size: 19px;
       line-height: 28px;
       color: $white;
+      font-family: $MainFont;
     }
   }
   .button-container {
@@ -40,6 +42,14 @@
       display: flex;
       flex-direction: column;
       color: $white;
+    }
+  }
+
+  .footer-column__item-redes {
+    h5 {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
     }
   }
 }
