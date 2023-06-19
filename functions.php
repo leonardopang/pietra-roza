@@ -22,15 +22,16 @@ function dp8_register_nav_menu()
 }
 add_action('after_setup_theme', 'dp8_register_nav_menu', 0);
 
-function style_on_logged(){
-  if( is_user_logged_in() ) :
-  ?>
-<style>
-body>main {
-  min-height: calc(100vh - (114px + 92px + 32px))
-}
-</style>
-<?php
+function style_on_logged()
+{
+  if (is_user_logged_in()) :
+?>
+    <style>
+      body>main {
+        min-height: calc(100vh - (114px + 92px + 32px))
+      }
+    </style>
+  <?php
   endif;
 }
 add_action('wp_head', 'style_on_logged');
@@ -59,12 +60,12 @@ add_action('wp_enqueue_scripts', 'dp8_enqueue_styles', 10);
 
 function arrow_top()
 {
-?>
-<div class="arrow-top">
-  <span class="bullet">
-    <?php get_svg('icon-arrow-chevron-top') ?>
-  </span>
-</div>
+  ?>
+  <div class="arrow-top">
+    <span class="bullet">
+      <?php get_svg('icon-arrow-chevron-top') ?>
+    </span>
+  </div>
 <?php
 }
 add_action('wp_footer', 'arrow_top');
@@ -156,3 +157,15 @@ function multiple_widget_init()
 add_action('widgets_init', 'multiple_widget_init');
 
 require_once(TEMPLATEPATH . '/inc/endpoints/usuario_post.php');
+function get_svg_content($filename)
+{
+  $svg_directory = get_stylesheet_directory() . '/assets/images/svg/';
+  $file_path = $svg_directory . $filename . '.svg';
+
+  if (file_exists($file_path)) {
+    $svg_content = file_get_contents($file_path);
+    return $svg_content;
+  } else {
+    return false;
+  }
+}

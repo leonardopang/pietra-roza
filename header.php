@@ -43,8 +43,22 @@ $orangeHeader = is_home() ? 'header-orange' : 'header-white';
           <div class="header-menu">
             <nav class="menu-desk">
               <?php wp_nav_menu($args_menu_desktop); ?>
+              <div class="social-icon-header">
+                <a href="" title="instagram" target="_blank">
+                  <span class="bullet-social">
+                    <?= get_svg_content('instagram'); ?>
+                  </span>
+                </a>
+                <a href="" title="linkedin" target="_blank">
+                  <span class="bullet-social">
+                    <?= get_svg_content('linkedin'); ?>
+                  </span>
+                </a>
+              </div>
             </nav>
+
           </div>
+
           <div class="hamburguer-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -64,6 +78,18 @@ $orangeHeader = is_home() ? 'header-orange' : 'header-white';
           </a>
         </div>
         <?php wp_nav_menu($args_menu_mobile); ?>
+        <div class="social-icon-header">
+          <a href="" title="instagram" target="_blank">
+            <span class="bullet-social">
+              <?= get_svg_content('instagram'); ?>
+            </span>
+          </a>
+          <a href="" title="linkedin" target="_blank">
+            <span class="bullet-social">
+              <?= get_svg_content('linkedin'); ?>
+            </span>
+          </a>
+        </div>
       </div>
     </nav>
   </header>
