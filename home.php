@@ -4,10 +4,10 @@
 
 <section class="about">
   <div class="container-wrap">
-    <div class="about-container grids two_grids">
+    <div class="about-container grid two_grids">
       <div class="about-container__item">
-        <div class="image-container">
-          <img src="" alt="">
+        <div class="image-container fav-icon-logo">
+          <img src="<?= site_url() ?>/wp-content/uploads/fav-icon.png" alt="Pietra Roza">
         </div>
         <div class="title-container">
           <span>Mármores e Revestimentos →</span>
@@ -23,19 +23,19 @@
       <div class="about-container__item grid two_grids">
         <div class="about-container__item-service">
           <a href="">
-            <img src="" alt="">
+            <img src="<?= site_url() ?>/wp-content/uploads/produtos-thumbnail.jpg" alt="">
             <div class="content">
-              <h3></h3>
-              <a href="">Veja mais →</a>
+              <h3>Produtos</h3>
+              <span>Veja mais →</span>
             </div>
           </a>
         </div>
         <div class="about-container__item-service">
           <a href="">
-            <img src="" alt="">
+            <img src="<?= site_url() ?>/wp-content/uploads/projeto-thumbnail.jpg" alt="">
             <div class="content">
-              <h3></h3>
-              <a href="">Veja mais →</a>
+              <h3>Projetos</h3>
+              <span>Veja mais →</span>
             </div>
           </a>
         </div>

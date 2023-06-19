@@ -77,5 +77,15 @@
   }
   .social-icon-header {
     margin-top: 0;
+    a {
+      .bullet-social {
+        transition: transform 0.5s ease;
+      }
+      &:hover {
+        .bullet-social {
+          transform: scale(1.05);
+        }
+      }
+    }
   }
 }
