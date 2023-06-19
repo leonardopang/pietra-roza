@@ -10,8 +10,9 @@ body {
   font-family: $MainFont;
   background-color: $Off-white;
 
-  > main {
-    min-height: calc(100vh - (114px + 92px));
+  >main {
+    min-height: calc(100vh - (80px + 461px));
+    ;
   }
 }
 
