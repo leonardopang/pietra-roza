@@ -43,10 +43,49 @@
 
 .menu-desk {
   display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icon-header {
+  margin-top: 2.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.813rem;
+  .bullet-social {
+    width: 30px;
+    height: 30px;
+    background-color: #ae361b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    svg {
+      width: 14px;
+      path {
+        fill: $white;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
   .menu-desk {
-    display: block;
+    display: flex;
+  }
+  .social-icon-header {
+    margin-top: 0;
+    a {
+      .bullet-social {
+        transition: transform 0.5s ease;
+      }
+      &:hover {
+        .bullet-social {
+          transform: scale(1.05);
+        }
+      }
+    }
   }
 }
