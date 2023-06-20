@@ -5,32 +5,43 @@
   box-sizing: border-box;
   border-radius: 16px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 21px;
   border-radius: 65px;
-  transition: background-color .5s ease, color .5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+  @media (min-width: $media-query-notebook) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   .arrow-button {
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
   }
 
   &:hover {
     text-decoration: none;
 
     .arrow-button {
-      transform: translateX(.5rem);
+      transform: translateX(0.5rem);
     }
   }
 }
 
+.button-orange {
+  background-color: $OrangeTheme;
+  color: $white;
+}
+
 .button--white {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   border-color: #fcfcfc;
-  color: #14142B;
+  color: #14142b;
 
   &:hover {
     background-color: transparent;
-    color: #FCFCFC;
+    color: #fcfcfc;
   }
 }
 
@@ -41,19 +52,18 @@
 
   &:hover {
     background-color: #fcfcfc;
-    color: #14142B;
+    color: #14142b;
   }
 }
 
 .button-green {
-  color: #27AF00;
-  background: #BCFAA1;
+  color: #27af00;
+  background: #bcfaa1;
   border-radius: 8px;
-  border-color: #BCFAA1
+  border-color: #bcfaa1;
 }
 
 .button-menu {
-
   a {
     letter-spacing: 0.25px !important;
     font-weight: 600 !important;
@@ -64,18 +74,18 @@
     padding: 9px 26px 9px 50px;
     border-radius: 25px;
     position: relative;
-    transition: transform .5s ease, filter .2s ease;
+    transition: transform 0.5s ease, filter 0.2s ease;
 
     &::after {
       display: none;
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 24px;
       top: 11px;
-      background-image: url('../../assets/images/icon-cart.png');
+      background-image: url("../../assets/images/icon-cart.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -84,7 +94,7 @@
     }
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
       transform: scale(1.01);
       text-decoration: none;
       filter: blur(0.5px);
@@ -104,5 +114,4 @@
       }
     }
   }
-
 }

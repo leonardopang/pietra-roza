@@ -19,7 +19,7 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
   </div>
 </section>
 
-<section class="about">
+<section class="about section-content">
   <div class="container-wrap">
     <div class="about-container grid two_grids">
       <div class="about-container__item">
@@ -37,7 +37,7 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
             com o melhor do design.</p>
         </div>
         <div class="button-container">
-          <a href="" class="button">Conheça mais →</a>
+          <a href="" class="button button-orange">Conheça mais <span class="arrow-button">→</span></a>
         </div>
       </div>
       <div class="about-container__item grid two_grids">
@@ -67,38 +67,39 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
   <div class="container-wrap">
     <div class="obras-container">
       <div class="title-container">
-        <span>Mármores e Revestimentos →</span>
-        <h2>Pietra Roza</h2>
+        <span>Nossas obras →</span>
+        <h2>Projetos e Mostras de decoração</h2>
       </div>
       <div class="obras-container__posts"></div>
       <div class="button-container">
-        <a href="" class="button">Conheça →</a>
+        <a href="" class="button button-orange">Conheça <span class="arrow-button">→</span></a>
       </div>
     </div>
   </div>
 </section>
-<section class="produtos">
+<section class="section-content produtos">
   <div class="container-wrap">
-    <div class="produtos-container grids two_grids">
+    <div class="produtos-container grid two_grids">
       <div class="produtos-container__item">
-        <div class="produtos-container__slide"></div>
+        <div class="produtos-container__slide">
+          <img src="<?= site_url() ?>/wp-content/uploads/product-thumbnail.jpg" alt="">
+        </div>
       </div>
       <div class="produtos-container__item">
         <div class="title-container">
-          <span>Mármores e Revestimentos →</span>
           <h2>Produtos</h2>
         </div>
         <div class="text-container">
-          <p></p>
+          <p>Fornecemos pedras ornamentais diversas como mármores, granitos, limestones, quartzitos, fabricados em quartzo e lâminas sinterizadas e ultracompactas para serviços em obras (bancadas, pisos, fachadas, lareiras, escadas, dentre outros) ou para mobiliário (tampos mosaicos, mesas laterais, aparadores, mesas de jantar, mesas de centro e objetos decorativos) de desenho exclusivo ou do cliente.</p>
         </div>
         <div class="button-container">
-          <a href="" class="button">Conheça os produtos →</a>
+          <a href="" class="button button-orange">Conheça os produtos <span class="arrow-button">→</span></a>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="about-product">
+<section class="section-content about-product">
   <div class="container-wrap">
     <div class="about-product-container">
       <div class="title-container">
@@ -110,7 +111,7 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
         <div class="about-product-container__grid-item"></div>
       </div>
       <div class="button-container">
-        <a href="">Quero conhecer mais →</a>
+        <a href="" class="button button-orange">Quero conhecer mais <span class="arrow-button">→</span></a>
       </div>
     </div>
   </div>
@@ -119,17 +120,17 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
   <div class="container-wrap">
     <div class="parceiros-container">
       <div class="title-container">
-        <h2></h2>
-        <span></span>
+        <h2>Nossos Parceiros</h2>
+        <span>A Pietra Roza trabalha com varios parceiros que ajudam você a ter o projeto dos seus sonhos</span>
       </div>
       <div class="paceiros-container__grid grid four_grids">
         <div class="paceiros-container__grid-item">
           <div class="image-container">
-            <img src="" alt="">
+            <img src="<?= site_url() ?>/wp-content/uploads/only-icon-logo-white.png" alt="">
           </div>
           <div class="content">
-            <h3></h3>
-            <span></span>
+            <h3>Nome do parceiro</h3>
+            <span>Arquiteto</span>
           </div>
         </div>
       </div>
@@ -157,11 +158,26 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
 <section class="certificacoes">
   <div class="container-wrap">
     <div class="certificacoes-container">
+      <div class="title-container">
+        <h2>Certificações</h2>
+      </div>
       <div class="certificacoes-grid grid three_grids">
         <div class="certificacoes-grid__item">
-          <img src="" alt="">
+          <img src="<?= site_url() ?>/wp-content/uploads/only-icon-logo.png" alt="">
           <div class="content">
-            <h3></h3>
+            <h3>Nome da certificação</h3>
+          </div>
+        </div>
+        <div class="certificacoes-grid__item">
+          <img src="<?= site_url() ?>/wp-content/uploads/only-icon-logo.png" alt="">
+          <div class="content">
+            <h3>Nome da certificação</h3>
+          </div>
+        </div>
+        <div class="certificacoes-grid__item">
+          <img src="<?= site_url() ?>/wp-content/uploads/only-icon-logo.png" alt="">
+          <div class="content">
+            <h3>Nome da certificação</h3>
           </div>
         </div>
       </div>

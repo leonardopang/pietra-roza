@@ -13,6 +13,8 @@
 @import './vendor/tinyslider.scss';
 
 @import './layout/grid',
+'./components/title-container',
+'./components/text-container',
 './layout/header',
 './layout/menu',
 './layout/menu-desk',
@@ -23,6 +25,8 @@
 './layout/form-contact',
 './layout/arrow-top',
 './layout/hero-header',
-'./layout/about-card';
+'./layout/about-card',
+'./layout/certificacoes',
+'./layout/parceiros';
 
 @import './pages/contact/contact';

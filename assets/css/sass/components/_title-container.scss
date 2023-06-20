@@ -1,21 +1,27 @@
 .section-content {
-  > .title-container {
-    &.text-center {
-      text-align: center;
-    }
-
+  .title-container:nth-child(1) {
+    text-align: center;
     h2 {
       color: $OrangeTheme;
       font-style: normal;
       font-weight: 800;
       font-size: 32px;
     }
+    span {
+      display: inline-block;
+      color: #141414;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+    }
   }
 }
 
 @media (min-width: $media-query-notebook) {
   .section-content {
-    > .title-container {
+    .title-container:nth-child(1) {
+      text-align: left;
       h2 {
         font-size: 48px;
       }
