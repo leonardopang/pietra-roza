@@ -1,0 +1,63 @@
+.page-template-contact main {
+  height: calc(100vh - (80px + 461px));
+  background-color: $OrangeTheme;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-container {
+  .title-container {
+    h1 {
+      color: $white;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+    }
+  }
+
+  .text-container {
+    margin: 2.313rem 0;
+    max-width: 560px;
+
+    a {
+      color: $white;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      color: $white;
+    }
+  }
+
+  .button-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.563rem;
+
+    .button-white {
+      padding: 10px 60px;
+      background-color: $white;
+      color: $OrangeTheme;
+      border-radius: 65px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media(min-width: $media-query-notebook) {
+  .contact-container {
+    .title-container {
+      h1 {
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 96px;
+      }
+    }
+  }
+}

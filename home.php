@@ -1,8 +1,25 @@
 <?php //Template name: Home Page 
 ?>
 <?php get_header() ?>
+<?php
 
-<section class="section-content about">
+$heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobile.jpg' : site_url() . '/wp-content/uploads/hero-heder.jpg';
+
+?>
+<section class="hero-header" style="background-image: url('<?= $heroHeader ?>');">
+  <div class="container-wrap">
+    <div class="hero-header-container">
+      <div class="title-container">
+        <h2>Chamada Banner</h2>
+      </div>
+      <div class="button-container">
+        <a href="" class="button button-yellow">Conheça mais <span class="arrow-button">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
   <div class="container-wrap">
     <div class="about-container grid two_grids">
       <div class="about-container__item">
@@ -14,7 +31,10 @@
           <h2>Pietra Roza</h2>
         </div>
         <div class="text-container">
-          <p>Da junção das marcas Dimarmo Mármores e Granitos e Petra Design Mármores e Interiores, nasceu a Pietra Roza Mármores e Revestimentos, empresa destaque na área de pedras naturais e fabricadas. Atuamos no setor há mais de 25 anos com equipe qualificada, de confiança e treinada para sempre atender às necessidades dos clientes com o melhor do design.</p>
+          <p>Da junção das marcas Dimarmo Mármores e Granitos e Petra Design Mármores e Interiores, nasceu a Pietra Roza
+            Mármores e Revestimentos, empresa destaque na área de pedras naturais e fabricadas. Atuamos no setor há mais
+            de 25 anos com equipe qualificada, de confiança e treinada para sempre atender às necessidades dos clientes
+            com o melhor do design.</p>
         </div>
         <div class="button-container">
           <a href="" class="button">Conheça mais →</a>
@@ -148,4 +168,5 @@
     </div>
   </div>
 </section>
+
 <?php get_footer() ?>

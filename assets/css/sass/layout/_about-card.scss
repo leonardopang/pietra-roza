@@ -4,15 +4,18 @@
 
 .about-container {
   gap: 3.375rem;
+
   .about-container__item {
     .fav-icon-logo {
       margin-bottom: 3.063rem;
       display: flex;
       justify-content: center;
     }
+
     .title-container {
       text-align: center;
       margin-bottom: 1rem;
+
       span {
         display: inline-block;
         color: #141414;
@@ -21,6 +24,7 @@
         font-weight: 400;
         font-size: 14px;
       }
+
       h2 {
         color: $OrangeTheme;
         font-style: normal;
@@ -28,9 +32,11 @@
         font-size: 32px;
       }
     }
+
     .text-container {
       margin-bottom: 2.5rem;
       text-align: center;
+
       p {
         color: #7a7a7a;
         font-weight: 300;
@@ -38,6 +44,7 @@
         line-height: 24px;
       }
     }
+
     &.two_grids {
       //Items about
       gap: 1.5rem;
@@ -46,15 +53,18 @@
 
   .about-container__item-service {
     position: relative;
+
     a {
       display: block;
     }
+
     img {
       object-fit: cover;
       border-radius: 5px;
       height: 157px;
       width: 100%;
     }
+
     .content {
       position: absolute;
       padding: 1.688rem 1.938rem;
@@ -65,6 +75,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       h3 {
         color: $white;
         font-weight: 500;
@@ -72,6 +83,7 @@
         line-height: 37px;
         display: block;
       }
+
       span {
         color: $white;
         font-weight: 300;
@@ -90,19 +102,24 @@
       .fav-icon-logo {
         justify-content: flex-start;
       }
+
       .title-container {
         text-align: left;
         margin-bottom: 0;
+
         h2 {
           font-size: 48px;
         }
       }
+
       .text-container {
         text-align: left;
       }
     }
+
     .about-container__item-service {
       height: auto;
+
       img {
         min-height: 521px;
       }

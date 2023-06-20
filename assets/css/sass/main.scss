@@ -22,16 +22,7 @@
 './layout/widget-social',
 './layout/form-contact',
 './layout/arrow-top',
-'./layout/calling',
-'./layout/about-card',
-'./layout/calling-contact',
-'./layout/others-services',
-'./layout/plans',
-'./layout/want-participate',
-'./layout/redes-sociais-footer';
+'./layout/hero-header',
+'./layout/about-card';
 
-
-@import './pages/home/hero-header',
-'./pages/home/two-columns';
-
-@import './pages/home';
+@import './pages/contact/contact';

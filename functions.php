@@ -14,24 +14,26 @@ add_action('after_setup_theme', 'dp8_theme_support');
 
 function dp8_register_nav_menu()
 {
-  register_nav_menus(array(
-    'desktop' => __('Desktop', 'text_domain'),
-    'footer'  => __('Footer', 'text_domain'),
-    'mobile'  => __('Mobile', 'text_domain'),
-  ));
+  register_nav_menus(
+    array(
+      'desktop' => __('Desktop', 'text_domain'),
+      'footer' => __('Footer', 'text_domain'),
+      'mobile' => __('Mobile', 'text_domain'),
+    )
+  );
 }
 add_action('after_setup_theme', 'dp8_register_nav_menu', 0);
 
 function style_on_logged()
 {
-  if (is_user_logged_in()) :
-?>
+  if (is_user_logged_in()):
+    ?>
     <style>
       body>main {
-        min-height: calc(100vh - (114px + 92px + 32px))
+        min-height: calc(100vh - (80px + 461px + 32));
       }
     </style>
-  <?php
+    <?php
   endif;
 }
 add_action('wp_head', 'style_on_logged');
@@ -66,7 +68,7 @@ function arrow_top()
       <?php get_svg('icon-arrow-chevron-top') ?>
     </span>
   </div>
-<?php
+  <?php
 }
 add_action('wp_footer', 'arrow_top');
 
@@ -125,7 +127,7 @@ add_filter('wpcf7_autop_or_not', '__return_false'); //Remover criação de tag <
 function learnedia_add_title_attribute($atts, $item)
 {
 
-  $atts['title']  = !empty($item->attr_title) ? $item->attr_title : $item->title;
+  $atts['title'] = !empty($item->attr_title) ? $item->attr_title : $item->title;
 
   return $atts;
 }
@@ -134,15 +136,17 @@ add_filter('nav_menu_link_attributes', 'learnedia_add_title_attribute', 10, 2);
 /* Better way to add multiple widgets areas */
 function widget_registration($name, $id, $description, $beforeWidget, $afterWidget, $beforeTitle, $afterTitle)
 {
-  register_sidebar(array(
-    'name' => $name,
-    'id' => $id,
-    'description' => $description,
-    'before_widget' => $beforeWidget,
-    'after_widget' => $afterWidget,
-    'before_title' => $beforeTitle,
-    'after_title' => $afterTitle,
-  ));
+  register_sidebar(
+    array(
+      'name' => $name,
+      'id' => $id,
+      'description' => $description,
+      'before_widget' => $beforeWidget,
+      'after_widget' => $afterWidget,
+      'before_title' => $beforeTitle,
+      'after_title' => $afterTitle,
+    )
+  );
 }
 
 function multiple_widget_init()

@@ -10,7 +10,7 @@
           <p>Solicite seu orçamento pelo botão abaixo ou envie um e-mail para contato@email.com.</p>
         </div>
         <div class="button-container">
-          <a href="" class="button">Solictar Orçamento</a>
+          <a href="" class="button">Solictar Orçamento <span class="arrow-button">→</span></a>
         </div>
       </div>
       <div class="footer-column__item footer-column__item-adress">

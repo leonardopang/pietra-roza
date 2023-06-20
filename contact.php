@@ -9,10 +9,12 @@
         </h1>
       </div>
       <div class="text-container">
-        <p></p>
+        <p>Entre em contato por um dos botôes abaixo ou envie um e-mail para
+          <a href="contato@pietraroza.com.r">contato@pietraroza.com</a>.
+        </p>
       </div>
       <div class="button-container grid two_grids">
-        <a href="" target="_blank" class="button bsutton-white">WhatsApp São Paulo</a>
+        <a href="" target="_blank" class="button button-white">WhatsApp São Paulo</a>
         <a href="" target="_blank" class="button button-white">WhatsApp Uberaba</a>
       </div>
     </div>
