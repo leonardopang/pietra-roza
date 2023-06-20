@@ -1,32 +1,17 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
-@import './base/reset',
-'./base/container',
-'./base/typhography';
+@import "./base/reset", "./base/container", "./base/typhography";
 
-@import './components/form',
-'./components/form-placeholder',
-'./components/skeleton',
-'./components/button',
-'./components/title-container';
+@import "./components/form", "./components/form-placeholder",
+  "./components/skeleton", "./components/button", "./components/title-container";
 
-@import './vendor/tinyslider.scss';
+@import "./vendor/tinyslider.scss";
 
-@import './layout/grid',
-'./components/title-container',
-'./components/text-container',
-'./layout/header',
-'./layout/menu',
-'./layout/menu-desk',
-'./layout/menu-mobile',
-'./layout/menu-footer',
-'./layout/footer',
-'./layout/widget-social',
-'./layout/form-contact',
-'./layout/arrow-top',
-'./layout/hero-header',
-'./layout/about-card',
-'./layout/certificacoes',
-'./layout/parceiros';
+@import "./layout/grid", "./components/title-container",
+  "./components/text-container", "./layout/header", "./layout/menu",
+  "./layout/menu-desk", "./layout/menu-mobile", "./layout/menu-footer",
+  "./layout/footer", "./layout/widget-social", "./layout/form-contact",
+  "./layout/arrow-top", "./layout/hero-header", "./layout/about-card",
+  "./layout/certificacoes", "./layout/parceiros", "./layout/obras";
 
-@import './pages/contact/contact';
+@import "./pages/contact/contact";
