@@ -2,7 +2,7 @@
 ?>
 <?php get_header() ?>
 
-<section class="about">
+<section class="section-content about">
   <div class="container-wrap">
     <div class="about-container grid two_grids">
       <div class="about-container__item">
@@ -43,7 +43,7 @@
     </div>
   </div>
 </section>
-<section class="obras">
+<section class="section-content obras">
   <div class="container-wrap">
     <div class="obras-container">
       <div class="title-container">
