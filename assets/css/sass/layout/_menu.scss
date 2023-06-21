@@ -38,6 +38,24 @@
         }
       }
     }
+
+    &.menu-item-has-children {
+      position: relative;
+
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
+      }
+
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
   }
 }
 
