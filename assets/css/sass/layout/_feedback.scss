@@ -1,0 +1,60 @@
+.feedback {
+  background: #02575F;
+  padding: 6rem 0;
+}
+
+.feedback-grid {
+  .feedback-grid__item-content {
+    text-align: center;
+
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: $white;
+    }
+
+    span {
+      margin-top: .75rem;
+      color: $white;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    .control-slide-container {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+
+      .arrow {
+        width: 40px;
+        height: 40px;
+        background-color: $white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+          width: 16px;
+
+          path {
+            stroke: $OrangeTheme;
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: $media-query-notebook) {
+    display: grid;
+    grid-template-columns: 26.67% 70.85%;
+    gap: 29px;
+
+    .feedback-grid__item-content {
+      text-align: left;
+    }
+  }
+}

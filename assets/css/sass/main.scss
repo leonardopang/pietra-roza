@@ -3,15 +3,15 @@
 @import "./base/reset", "./base/container", "./base/typhography";
 
 @import "./components/form", "./components/form-placeholder",
-  "./components/skeleton", "./components/button", "./components/title-container";
+"./components/skeleton", "./components/button", "./components/title-container";
 
-@import "./vendor/tinyslider.scss";
+@import "./vendor/tinyslider";
 
 @import "./layout/grid", "./components/title-container",
-  "./components/text-container", "./layout/header", "./layout/menu",
-  "./layout/menu-desk", "./layout/menu-mobile", "./layout/menu-footer",
-  "./layout/footer", "./layout/widget-social", "./layout/form-contact",
-  "./layout/arrow-top", "./layout/hero-header", "./layout/about-card",
-  "./layout/certificacoes", "./layout/parceiros", "./layout/obras";
+"./components/text-container", "./layout/header", "./layout/menu",
+"./layout/menu-desk", "./layout/menu-mobile", "./layout/menu-footer",
+"./layout/footer", "./layout/widget-social", "./layout/arrow-top",
+"./layout/hero-header", "./layout/about-card", "./layout/certificacoes",
+"./layout/parceiros", "./layout/obras", "./layout/about-product", "./layout/about-company", "./layout/feedback";
 
 @import "./pages/contact/contact";

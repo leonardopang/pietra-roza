@@ -1,5 +1,5 @@
 .page-template-contact main {
-  height: calc(100vh - (80px + 461px));
+  padding: 4rem 0;
   background-color: $OrangeTheme;
   display: flex;
   align-items: center;
@@ -8,6 +8,8 @@
 }
 
 .contact-container {
+
+
   .title-container {
     h1 {
       color: $white;
@@ -34,6 +36,7 @@
   }
 
   .button-container {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.563rem;
@@ -51,6 +54,10 @@
 }
 
 @media(min-width: $media-query-notebook) {
+  .page-template-contact main {
+    height: calc(100vh - (80px + 461px));
+  }
+
   .contact-container {
     .title-container {
       h1 {

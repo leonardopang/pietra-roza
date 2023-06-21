@@ -13,7 +13,7 @@
           <a href="contato@pietraroza.com.r">contato@pietraroza.com</a>.
         </p>
       </div>
-      <div class="button-container grid two_grids">
+      <div class="button-container">
         <a href="" target="_blank" class="button button-white">WhatsApp São Paulo</a>
         <a href="" target="_blank" class="button button-white">WhatsApp Uberaba</a>
       </div>

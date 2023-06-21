@@ -71,12 +71,12 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
         <h2>Projetos e Mostras de decoração</h2>
       </div>
       <div class="obras-container__posts">
-        <?php if (wp_is_mobile()) : ?>
+        <?php if (wp_is_mobile()): ?>
           <div class="obras-container__posts-slider"></div>
-        <?php else : ?>
+        <?php else: ?>
           <div class="obras-container__posts-grid">
             <div class="obras-container__posts-grid-item item-1x">
-              <img src="" alt="">
+              <img src="<?= site_url() ?>/wp-content/uploads/nome-obra.jpg" alt="">
               <a href="">
                 <div class="content">
                   <h3>nome da obra</h3>
@@ -84,7 +84,7 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
               </a>
             </div>
             <div class="obras-container__posts-grid-item item-1x">
-              <img src="" alt="">
+              <img src="<?= site_url() ?>/wp-content/uploads/nome-obra-2.jpg" alt="">
               <a href="">
                 <div class="content">
                   <h3>nome da obra</h3>
@@ -92,7 +92,31 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
               </a>
             </div>
             <div class="obras-container__posts-grid-item item-2x">
-              <img src="" alt="">
+              <img src="<?= site_url() ?>/wp-content/uploads/nome-obra-3.jpg" alt="">
+              <a href="">
+                <div class="content">
+                  <h3>nome da obra</h3>
+                </div>
+              </a>
+            </div>
+            <div class="obras-container__posts-grid-item item-2x">
+              <img src="<?= site_url() ?>/wp-content/uploads/nome-obra-4.jpg" alt="">
+              <a href="">
+                <div class="content">
+                  <h3>nome da obra</h3>
+                </div>
+              </a>
+            </div>
+            <div class="obras-container__posts-grid-item item-1x">
+              <img src="<?= site_url() ?>/wp-content/uploads/nome-obra-5.jpg" alt="">
+              <a href="">
+                <div class="content">
+                  <h3>nome da obra</h3>
+                </div>
+              </a>
+            </div>
+            <div class="obras-container__posts-grid-item item-1x">
+              <img src="<?= site_url() ?>/wp-content/uploads/nome-obra-6.jpg" alt="">
               <a href="">
                 <div class="content">
                   <h3>nome da obra</h3>
@@ -107,38 +131,77 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
       </div>
     </div>
 </section>
-<section class="section-content produtos">
+<section class="section-content about-products">
   <div class="container-wrap">
-    <div class="produtos-container grid two_grids">
-      <div class="produtos-container__item">
-        <div class="produtos-container__slide">
+    <div class="about-products-container grid two_grids">
+      <div class="about-products-container__item">
+        <div class="about-products-container__slide">
           <img src="<?= site_url() ?>/wp-content/uploads/product-thumbnail.jpg" alt="">
         </div>
       </div>
-      <div class="produtos-container__item">
+      <div class="about-products-container__item">
         <div class="title-container">
           <h2>Produtos</h2>
         </div>
         <div class="text-container">
-          <p>Fornecemos pedras ornamentais diversas como mármores, granitos, limestones, quartzitos, fabricados em quartzo e lâminas sinterizadas e ultracompactas para serviços em obras (bancadas, pisos, fachadas, lareiras, escadas, dentre outros) ou para mobiliário (tampos mosaicos, mesas laterais, aparadores, mesas de jantar, mesas de centro e objetos decorativos) de desenho exclusivo ou do cliente.</p>
+          <p>Fornecemos pedras ornamentais diversas como mármores, granitos, limestones, quartzitos, fabricados em
+            quartzo e lâminas sinterizadas e ultracompactas para serviços em obras (bancadas, pisos, fachadas, lareiras,
+            escadas, dentre outros) ou para mobiliário (tampos mosaicos, mesas laterais, aparadores, mesas de jantar,
+            mesas de centro e objetos decorativos) de desenho exclusivo ou do cliente.</p>
         </div>
         <div class="button-container">
-          <a href="" class="button button-orange">Conheça os produtos <span class="arrow-button">→</span></a>
+          <a href="" class="button button-orange">Conhecer produtos <span class="arrow-button">→</span></a>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="section-content about-product">
+<section class="section-content about-company">
   <div class="container-wrap">
-    <div class="about-product-container">
+    <div class="about-company-container">
       <div class="title-container">
         <h2>Sobre</h2>
       </div>
-      <div class="about-product-container__grid grid three_grids">
-        <div class="about-product-container__grid-item"></div>
-        <div class="about-product-container__grid-item"></div>
-        <div class="about-product-container__grid-item"></div>
+      <div class="about-company-container__grid grid three_grids">
+        <div class="about-company-container__grid-item">
+          <div class="image-container">
+            <img src="<?= site_url() ?>/wp-content/uploads/maquinario-thumbnail.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Maquinários</h3>
+            <div class="text">
+              <p>Investimos em tecnologia e inovação com maquinário de última geração para aprimorar nossos processos
+                produtivos e garantir resultados com maior precisão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-company-container__grid-item">
+          <div class="image-container">
+            <img src="<?= site_url() ?>/wp-content/uploads/sustentabilidade-thumbnail.png" alt="">
+          </div>
+          <div class="content">
+            <h3>Sustentabilidade</h3>
+            <div class="text">
+              <p>Temos compromisso com a natureza buscando práticas responsáveis em nossas operações, desde a seleção de
+                fornecedores sustentáveis até a adoção de medidas de reaproveitamento de recursos naturais e resíduos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about-company-container__grid-item">
+          <div class="image-container">
+            <img src="<?= site_url() ?>/wp-content/uploads/equipe-thumbnail.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Equipe</h3>
+            <div class="text">
+              <p>Nossa equipe é qualificada para ter um ótimo atendimento, compreensão dos projetos dos profissionais de
+                construção, execução de desenhos técnicos ao cliente
+                e estar sempre atenta as novidades
+                do mercado.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="button-container">
         <a href="" class="button button-orange">Quero conhecer mais <span class="arrow-button">→</span></a>
@@ -171,15 +234,24 @@ $heroHeader = wp_is_mobile() ? site_url() . '/wp-content/uploads/hero-heder-mobi
   <div class="container-wrap">
     <div class="feedback-container">
       <div class="feedback-grid">
-        <div class="feedback-grid__item">
+        <div class="feedback-grid__item feedback-grid__item-content">
           <div class="title-container">
-            <h2></h2>
-            <span></span>
+            <h2>Feedback dos Clientes</h2>
+            <span>Veja o depoimento de clientes e arquitetos</span>
           </div>
-          <div class="control-slide-container"></div>
+          <?php if (!wp_is_mobile()): ?>
+            <div class="control-slide-container">
+              <span class="arrow arrows-left">
+                <?= get_svg_content('icon-arrow-chevron-left'); ?>
+              </span>
+              <span class="arrow arrows-right">
+                <?= get_svg_content('icon-arrow-chevron-right'); ?>
+              </span>
+            </div>
+          <?php endif; ?>
         </div>
-        <div class="feedback-grid__item">
-          <div class="feedback-slide"></div>
+        <div class="feedback-grid__item feedback-grid__item-slider">
+          <div class="feedback-slider"></div>
         </div>
       </div>
     </div>

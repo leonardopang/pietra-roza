@@ -57,6 +57,21 @@
       font-size: 20px;
       line-height: 25px;
     }
+
+    .social-icon {
+      display: flex;
+      align-items: center;
+      gap: 0.688rem;
+      margin-top: 0.313rem;
+
+      svg {
+        width: 16px;
+
+        path {
+          fill: $white;
+        }
+      }
+    }
   }
 }
 

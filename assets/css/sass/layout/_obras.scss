@@ -4,11 +4,17 @@
 
 .obras-container__posts {
   margin-top: 2rem;
+
   .button-container {
     margin-top: 2rem;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+  }
+
+  @media (min-width: $media-query-notebook) {
+    .button-container {
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -19,9 +25,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    @media (min-width: $media-query-notebook) {
-      flex-wrap: nowrap;
-    }
+
     .obras-container__posts-grid-item {
       position: relative;
       height: 280px;
@@ -32,16 +36,17 @@
           width: calc(50% - 10px);
         }
       }
+
       @media (min-width: $media-query-notebook) {
         &.item-1x {
-          width: 33%;
-          max-width: 280px;
+          width: calc(25% - 15px);
         }
+
         &.item-2x {
-          max-width: 580px;
-          width: 66%;
+          width: calc(50% - 10px);
         }
       }
+
       a {
         padding: 1.5rem;
         position: absolute;
@@ -52,11 +57,12 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.5);
+
         &:hover {
           text-decoration: none;
         }
       }
+
       .content {
         h3 {
           color: $white;
@@ -67,4 +73,6 @@
       }
     }
   }
+
+
 }

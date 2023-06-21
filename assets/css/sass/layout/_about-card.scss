@@ -49,6 +49,17 @@
       //Items about
       gap: 1.5rem;
     }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media(min-width: $media-query-notebook) {
+      .button-container {
+        justify-content: flex-start;
+      }
+    }
   }
 
   .about-container__item-service {

@@ -23,7 +23,12 @@
       <div class="footer-column__item footer-column__item-redes">
         <h5>Redes</h5>
         <div class="social-icon">
-          <a href="" target="_blank"></a>
+          <a href="" target="_blank">
+            <?= get_svg_content('instagram'); ?>
+          </a>
+          <a href="" target="_blank">
+            <?= get_svg_content('linkedin'); ?>
+          </a>
         </div>
       </div>
     </div>
