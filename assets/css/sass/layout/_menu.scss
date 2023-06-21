@@ -75,6 +75,14 @@
 }
 
 @media (min-width: 992px) {
+  .header-white .menu .menu-item a {
+    color: $black;
+
+    &:after {
+      background-color: $black;
+    }
+  }
+
   .menu-desk {
     display: flex;
   }

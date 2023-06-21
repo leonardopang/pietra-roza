@@ -21,9 +21,10 @@ $args_menu_mobile = array(
 </head>
 <?php
 
-$orangeHeader = is_home() ? 'header-orange' : 'header-white';
+$orangeHeader = is_home() || is_page('contato') ? 'header-orange' : 'header-white';
+$logoSelect = is_home() || is_page('contato') ? 'logo-white.png' : 'logo-dark.png'
 
-?>
+  ?>
 
 <body <?php body_class('dp8_theme') ?>>
   <?php wp_body_open() ?>
@@ -33,10 +34,10 @@ $orangeHeader = is_home() ? 'header-orange' : 'header-white';
         <div class="header-middle_container">
           <div class="header-logo logo-container">
             <a href="<?= site_url() ?>">
-              <?php if (wp_is_mobile()) : ?>
+              <?php if (wp_is_mobile()): ?>
                 <img src="<?= site_url() ?>/wp-content/uploads/logo-mobile.png" class="logo-mobile" alt="Pietra Roza">
-              <?php else : ?>
-                <img src="<?= site_url() ?>/wp-content/uploads/logo-white.png" alt="Pietra Roza">
+              <?php else: ?>
+                <img src="<?= site_url() ?>/wp-content/uploads/<?= $logoSelect ?>" alt="Pietra Roza">
               <?php endif; ?>
             </a>
           </div>

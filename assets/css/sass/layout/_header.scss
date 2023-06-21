@@ -2,8 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $OrangeTheme;
   flex-wrap: wrap;
+  background-color: $OrangeTheme;
+
+  @media(min-width: $media-query-notebook) {
+    background-color: $white;
+
+    &.header-orange {
+      background-color: $OrangeTheme;
+    }
+  }
 }
 
 .header-middle {
