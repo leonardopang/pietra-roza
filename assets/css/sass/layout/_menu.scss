@@ -45,14 +45,39 @@
       &:hover {
         .sub-menu {
           display: block;
+          min-width: 156px;
         }
       }
 
       .sub-menu {
         display: none;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 40px;
+
+        .menu-item {
+          a {
+            padding: .25rem 0;
+            width: 100%;
+            background-color: #AE361B;
+            color: $white;
+            text-align: center;
+
+            &::after {
+              display: none;
+            }
+          }
+
+          &:first-child a {
+            padding: 1rem 0 .25rem;
+          }
+
+          &:last-child a {
+            padding: .25rem 0 1rem;
+          }
+        }
       }
     }
 
