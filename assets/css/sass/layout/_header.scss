@@ -4,6 +4,8 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: $OrangeTheme;
+  position: relative;
+  z-index: 9;
 
   @media(min-width: $media-query-notebook) {
     background-color: $white;

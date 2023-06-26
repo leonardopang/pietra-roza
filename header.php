@@ -21,8 +21,8 @@ $args_menu_mobile = array(
 </head>
 <?php
 
-$orangeHeader = is_home() || is_page('contato') ? 'header-orange' : 'header-white';
-$logoSelect = is_home() || is_page('contato') ? 'logo-white.png' : 'logo-dark.png'
+$orangeHeader = is_home() || is_page('home') || is_page('sobre') || is_page('contato') ? 'header-orange' : 'header-white';
+$logoSelect = is_home() || is_page('home') || is_page('sobre') || is_page('contato') ? 'logo-white.png' : 'logo-dark.png'
 
   ?>
 
