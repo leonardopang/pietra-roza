@@ -25,51 +25,56 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+  }
 
-    .obras-container__posts-grid-item {
-      position: relative;
-      height: 280px;
+  .obras-container__posts-grid-item {
+    position: relative;
+    height: 280px;
+    width: 100%;
+
+    img {
       width: 100%;
+      object-fit: cover;
+    }
 
-      @media (min-width: $media-query-tablet) {
-        &.item-1x {
-          width: calc(50% - 10px);
-        }
+    @media (min-width: $media-query-tablet) {
+      &.item-1x {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @media (min-width: $media-query-notebook) {
+      &.item-1x {
+        width: calc(25% - 15px);
       }
 
-      @media (min-width: $media-query-notebook) {
-        &.item-1x {
-          width: calc(25% - 15px);
-        }
-
-        &.item-2x {
-          width: calc(50% - 10px);
-        }
+      &.item-2x {
+        width: calc(50% - 10px);
       }
+    }
 
-      a {
-        padding: 1.5rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+    a {
+      padding: 1.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
 
-        &:hover {
-          text-decoration: none;
-        }
+      &:hover {
+        text-decoration: none;
       }
+    }
 
-      .content {
-        h3 {
-          color: $white;
-          font-weight: 800;
-          font-size: 20px;
-          line-height: 20px;
-        }
+    .content {
+      h3 {
+        color: $white;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 20px;
       }
     }
   }

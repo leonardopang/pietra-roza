@@ -4,10 +4,11 @@
     <div class="footer-column grid three_grids">
       <div class="footer-column__item">
         <div class="logo-container">
-          <img src="<?= site_url() ?>/wp-content/uploads/logo-mobile.png" alt="">
+          <img src="<?= site_url() ?>/wp-content/uploads/logo-mobile.png" alt="Pietra Roza">
         </div>
         <div class="text-container">
-          <p>Solicite seu orçamento pelo botão abaixo ou envie um e-mail para contato@email.com.</p>
+          <p>Solicite seu orçamento pelo botão abaixo ou envie um e-mail para <a
+              href="mailto:contato@pietraroza.com">contato@pietraroza.com</a>.</p>
         </div>
         <div class="button-container">
           <a href="" class="button">Solictar Orçamento <span class="arrow-button">→</span></a>

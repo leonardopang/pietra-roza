@@ -22,6 +22,11 @@
       color: $white;
       font-family: $MainFont;
     }
+
+    a {
+      color: $white;
+      display: inline-block;
+    }
   }
 
   .button-container {

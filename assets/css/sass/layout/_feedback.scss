@@ -48,6 +48,48 @@
     }
   }
 
+  .slider-container {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 32px;
+
+    .content-text {
+      border-bottom: 1px solid #D9DBE9;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+
+      p {
+        color: #37394F;
+        font-size: 14px;
+        font-family: Poppins;
+        line-height: 32px;
+        letter-spacing: 0.75px;
+      }
+    }
+
+    .info-content {
+      .nome {
+        display: block;
+        color: #000;
+        font-size: 13px;
+        font-family: Poppins;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+      }
+
+      .profissao {
+        display: block;
+        color: #0C2B07;
+        font-size: 13px;
+        font-family: Poppins;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
+
   @media(min-width: $media-query-notebook) {
     display: grid;
     grid-template-columns: 26.67% 70.85%;
