@@ -32,6 +32,14 @@
   }
 }
 
+.hero-header-single {
+  .hero-header-container {
+    .title-container {
+      max-width: 660px;
+    }
+  }
+}
+
 @media(min-width: $media-query-notebook) {
   .hero-header {
     height: 650px;

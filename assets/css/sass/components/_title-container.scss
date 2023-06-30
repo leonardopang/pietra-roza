@@ -1,12 +1,19 @@
 .section-content {
   .title-container:nth-child(1) {
     text-align: center;
-    h2 {
+
+    &.title-center {
+      text-align: center;
+    }
+
+    h2,
+    h1 {
       color: $OrangeTheme;
       font-style: normal;
       font-weight: 800;
       font-size: 32px;
     }
+
     span {
       display: inline-block;
       color: #141414;
@@ -22,7 +29,13 @@
   .section-content {
     .title-container:nth-child(1) {
       text-align: left;
-      h2 {
+
+      &.title-center {
+        text-align: center;
+      }
+
+      h2,
+      h1 {
         font-size: 48px;
       }
     }

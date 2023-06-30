@@ -13,6 +13,11 @@
 .about-company-container__grid {
   gap: 2.125rem;
   margin: 2.125rem 0;
+  grid-template-columns: 100%;
+
+  @media(min-width: $media-query-notebook) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   .about-company-container__grid-item {
     background-color: $white;
