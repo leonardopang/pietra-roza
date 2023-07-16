@@ -1,3 +1,7 @@
 <?php get_header(); ?>
-<?php get_the_archive_title() ?>
+<section>
+  <div class="container-wrap">
+
+  </div>
+</section>
 <?php get_footer(); ?>

@@ -65,10 +65,10 @@ function arrow_top()
   ?>
   <div class="arrow-top">
     <span class="bullet">
-      <?php get_svg('icon-arrow-chevron-top') ?>
-    </span>
-  </div>
-  <?php
+    <?php get_svg('icon-arrow-chevron-top') ?>
+  </span>
+</div>
+<?php
 }
 add_action('wp_footer', 'arrow_top');
 
@@ -172,4 +172,194 @@ function get_svg_content($filename)
   } else {
     return false;
   }
+}
+
+function filter_posts()
+{
+  $material = basename($_GET['material']);
+  $args = array(
+    'post_type' => 'produto',
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'material',
+        'field' => 'slug',
+        'terms' => $material,
+      ),
+    ),
+  );
+
+  $query = new WP_Query($args);
+
+  if ($query->have_posts()) {
+    while ($query->have_posts()) {
+      $query->the_post();
+      // Conteúdo do post
+      ?>
+      <div class="post-item post-item-material">
+        <a>
+          <?php if (has_post_thumbnail()): ?>
+            <div class="thumbnail">
+              <?php the_post_thumbnail(); ?>
+              <div class="overlay"></div>
+            </div>
+          <?php endif; ?>
+          <div class="post-details">
+            <h2>
+              <?php the_title(); ?>
+            </h2>
+            <div class="description">
+              <?= get_the_content() ?>
+              <span class="codigo-identificacao">
+                <?php if (get_field('codigo_identificacao')): ?>
+                  <?php the_field('codigo_identificacao') ?>
+                <?php else: ?>
+                  Código identificação
+                <?php endif; ?>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <?php
+    }
+    wp_reset_postdata();
+  } else {
+    echo 'Nenhum produto encontrado.';
+  }
+
+  die();
+}
+add_action('wp_ajax_filter_posts', 'filter_posts');
+add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');
+
+// Função para filtrar os posts por tipo e ordená-los
+function filter_posts_tipo()
+{
+  // Obtém os parâmetros do tipo e orderby da solicitação GET
+  $tipo = isset($_GET['tipo']) ? basename(sanitize_text_field($_GET['tipo'])) : '';
+  $orderby = isset($_GET['orderby']) ? sanitize_text_field($_GET['orderby']) : 'title';
+
+  // Argumentos da consulta
+  $args = array(
+    'post_type' => 'obra',
+    'posts_per_page' => -1,
+    'orderby' => $orderby,
+    'order' => 'ASC',
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'tipo',
+        'field' => 'slug',
+        'terms' => $tipo,
+      ),
+    ),
+  );
+
+  // Realiza a consulta
+  $query = new WP_Query($args);
+
+  // Verifica se foram encontrados posts
+  if ($query->have_posts()) {
+    // Loop pelos posts encontrados
+    while ($query->have_posts()) {
+      $query->the_post();
+      ?>
+      <div class="post-item post-item-tipo">
+        <a>
+          <?php if (has_post_thumbnail()): ?>
+            <div class="thumbnail">
+              <?php the_post_thumbnail(); ?>
+              <div class="overlay"></div>
+            </div>
+          <?php endif; ?>
+          <div class="post-details">
+            <h2>
+              <?php the_title(); ?>
+            </h2>
+            <div class="description">
+              <?= get_the_content() ?>
+              <span class="codigo-identificacao">
+                <?php if (get_field('codigo_identificacao')): ?>
+                  <?php the_field('codigo_identificacao') ?>
+                <?php else: ?>
+                  Código identificação
+                <?php endif; ?>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <?php
+    }
+  } else {
+    echo 'Nenhuma obra encontrada.';
+  }
+
+  // Restaura os dados originais da consulta global do WordPress
+  wp_reset_postdata();
+
+  // Encerra a execução
+  die();
+}
+add_action('wp_ajax_filter_posts_tipo', 'filter_posts_tipo');
+add_action('wp_ajax_nopriv_filter_posts_tipo', 'filter_posts_tipo');
+
+if (function_exists('acf_add_options_page')) {
+
+  acf_add_options_page(
+    array(
+      'page_title' => 'Tema',
+      'menu_title' => 'Tema',
+      'menu_slug' => 'tema',
+      'redirect' => true,
+      'position' => '3.1',
+      'icon_url' => 'dashicons-admin-generic',
+    )
+  );
+
+  acf_add_options_sub_page(
+    array(
+      'page_title' => 'Logos',
+      'menu_title' => 'Logos',
+      'parent_slug' => 'tema',
+      'menu_slug' => 'tema-logo',
+      'post_id' => 'opt-logo',
+    )
+  );
+
+  acf_add_options_sub_page(
+    array(
+      'page_title' => 'Footer',
+      'menu_title' => 'Footer',
+      'parent_slug' => 'tema',
+      'menu_slug' => 'teme-footer',
+      'post_id' => 'opt-footer',
+    )
+  );
+
+  acf_add_options_sub_page(
+    array(
+      'page_title' => 'Redes Sociais',
+      'menu_title' => 'Redes Sociais',
+      'parent_slug' => 'tema',
+      'menu_slug' => 'redes-sociais',
+      'post_id' => 'opt-social',
+    )
+  );
+}
+add_filter('wp_nav_menu_objects', 'add_arrow_to_submenus', 10, 2);
+
+function add_arrow_to_submenus($items, $args)
+{
+
+  // Percorrer os itens do menu
+  foreach ($items as $item) {
+
+    // Verificar se o item tem um submenu
+    if ($item->has_children) {
+
+      // Adicionar um span com a classe icon-arrow ao item
+      $item->title .= '<span class="icon-arrow"></span>';
+    }
+  }
+  return $items;
 }

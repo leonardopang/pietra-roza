@@ -8,6 +8,9 @@ $args_menu_mobile = array(
   'theme_localtion' => 'mobile'
 );
 
+$logoAlternative = get_field('logo_desk_alternativo', 'opt-logo');
+$logo = get_field('logo_desk', 'opt-logo');
+$logoMobile = get_field('logo_mobile', 'opt-logo');
 
 ?>
 <!DOCTYPE html>
@@ -22,9 +25,10 @@ $args_menu_mobile = array(
 <?php
 
 $orangeHeader = is_home() || is_page('home') || is_page('sobre') || is_page('contato') ? 'header-orange' : 'header-white';
-$logoSelect = is_home() || is_page('home') || is_page('sobre') || is_page('contato') ? 'logo-white.png' : 'logo-dark.png'
 
-  ?>
+$logoSelect = is_home() || is_page('home') || is_page('sobre') || is_page('contato') ? $logo : $logoAlternative;
+
+?>
 
 <body <?php body_class('dp8_theme') ?>>
   <?php wp_body_open() ?>
@@ -35,9 +39,9 @@ $logoSelect = is_home() || is_page('home') || is_page('sobre') || is_page('conta
           <div class="header-logo logo-container">
             <a href="<?= site_url() ?>">
               <?php if (wp_is_mobile()): ?>
-                <img src="<?= site_url() ?>/wp-content/uploads/logo-mobile.png" class="logo-mobile" alt="Pietra Roza">
+                <img src="<?= $logoMobile ?>" class="logo-mobile" alt="Pietra Roza">
               <?php else: ?>
-                <img src="<?= site_url() ?>/wp-content/uploads/<?= $logoSelect ?>" alt="Pietra Roza">
+                <img src="<?= $logoSelect ?>" alt="Pietra Roza">
               <?php endif; ?>
             </a>
           </div>
@@ -45,12 +49,12 @@ $logoSelect = is_home() || is_page('home') || is_page('sobre') || is_page('conta
             <nav class="menu-desk">
               <?php wp_nav_menu($args_menu_desktop); ?>
               <div class="social-icon-header">
-                <a href="" title="instagram" target="_blank">
+                <a href="<?php the_field('instagram', 'opt-logo') ?>" title="instagram" target="_blank">
                   <span class="bullet-social">
                     <?= get_svg_content('instagram'); ?>
                   </span>
                 </a>
-                <a href="" title="linkedin" target="_blank">
+                <a href="<?php the_field('facebook', 'opt-logo') ?>" title="linkedin" target="_blank">
                   <span class="bullet-social">
                     <?= get_svg_content('linkedin'); ?>
                   </span>

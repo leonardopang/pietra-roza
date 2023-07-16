@@ -7,19 +7,16 @@
           <img src="<?= site_url() ?>/wp-content/uploads/logo-mobile.png" alt="Pietra Roza">
         </div>
         <div class="text-container">
-          <p>Solicite seu orçamento pelo botão abaixo ou envie um e-mail para <a
-              href="mailto:contato@pietraroza.com">contato@pietraroza.com</a>.</p>
+          <?php the_field('descricao_footer', 'opt-footer'); ?>
         </div>
         <div class="button-container">
-          <a href="" class="button">Solictar Orçamento <span class="arrow-button">→</span></a>
+          <a href="<?php the_field('link_button', 'opt-footer'); ?>" class="button"><?php the_field('button', 'opt-footer'); ?> <span class="arrow-button">→</span></a>
         </div>
       </div>
-      <div class="footer-column__item footer-column__item-adress">
-        <a href="" target="_blank">
-          <span>Local</span>
-          <span>São Paulo - SP</span>
-          <span>Uberaba-MG</span>
-        </a>
+      <div class="footer-column__item footer-column__item-redes footer-column__item-adress">
+        <h5>Local</h5>
+        <a href="<?php the_field('endereco_sp', 'opt-footer'); ?>" target="_blank">São Paulo - SP</a>
+        <a href="<?php the_field('endereco_uberaba', 'opt-footer'); ?>" target="_blank">Uberaba-MG</a>
       </div>
       <div class="footer-column__item footer-column__item-redes">
         <h5>Redes</h5>
@@ -34,7 +31,9 @@
       </div>
     </div>
     <div class="footer-copy">
-      <p>Copyright © Pietra Roza 2023 . Todos os Direitos Reservados</p>
+      <p>
+        <?php the_field('copy_rights', 'opt-footer'); ?>
+      </p>
     </div>
   </div>
 </footer>

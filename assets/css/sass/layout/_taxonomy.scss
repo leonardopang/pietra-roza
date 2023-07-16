@@ -1,0 +1,59 @@
+.taxonomy {
+  padding: 4rem 0;
+  background-color: $white;
+}
+
+.filter {
+  display: grid;
+  gap: 1rem;
+
+  .categoria {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    a {
+      display: block;
+      color: #EC8D00;
+      border: 1px solid #EC8D00;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      padding: 9px 1rem;
+      border-radius: 26px;
+      transition: background-color .5s ease, color .5s ease;
+
+      &:hover,
+      &.active {
+        background-color: #EC8D00;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.taxonomy-container {
+  @media(min-width: $media-query-notebook) {
+    grid-template-columns: 20% 1fr;
+    gap: 1rem;
+  }
+
+  .title-container {
+    margin-bottom: .5rem;
+  }
+
+  .order-posts {
+    margin-bottom: 2rem;
+  }
+
+  .grid-posts {
+    display: grid;
+
+    @media(min-width: $media-query-notebook) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+}

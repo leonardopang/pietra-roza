@@ -9,13 +9,11 @@
         </h1>
       </div>
       <div class="text-container">
-        <p>Entre em contato por um dos botôes abaixo ou envie um e-mail para
-          <a href="contato@pietraroza.com.r">contato@pietraroza.com</a>.
-        </p>
+        <?php the_field('descricao_contato') ?>
       </div>
       <div class="button-container">
-        <a href="" target="_blank" class="button button-white">WhatsApp São Paulo</a>
-        <a href="" target="_blank" class="button button-white">WhatsApp Uberaba</a>
+        <a href="<?php the_field('link_button_1') ?>" target="_blank" class="button button-white"><?php the_field('button_1') ?></a>
+        <a href="<?php the_field('link_button_2') ?>" target="_blank" class="button button-white"><?php the_field('button_2') ?></a>
       </div>
     </div>
   </div>
